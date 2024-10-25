@@ -18,7 +18,7 @@ jobs:
         id: build
         uses: manleydev/build-godot-action@master
         with:
-          name: survive
+          name: survive.exe
           preset: ${{ matrix.platform }}
           debugMode: "true"
       - name: Upload Artifact
