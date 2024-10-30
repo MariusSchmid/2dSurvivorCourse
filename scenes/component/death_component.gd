@@ -9,6 +9,8 @@ func _ready():
 	
 	
 func on_died():
+	if null == owner:
+		return
 	var spawn_position = owner.global_position
 	var entities = get_tree().get_first_node_in_group("entities_layer")
 	get_parent().remove_child(self)
