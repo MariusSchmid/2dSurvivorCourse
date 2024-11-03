@@ -12,7 +12,7 @@ var enemy_table = WeightedTable.new()
 
 func _ready() -> void:
 	enemy_table.add_item(basic_enemy_scene, 10)
-	enemy_table.add_item(wizard_enemy_scene, 20)
+	# enemy_table.add_item(wizard_enemy_scene, 20)
 	base_spawn_time = timer.wait_time
 	timer.timeout.connect(on_timer_timeout)
 	arena_time_manager.arena_difficulty_increased.connect(on_arena_difficulty_increased)
